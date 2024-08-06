@@ -4,3 +4,4 @@ def run(file_name):
         line.rstrip()
         word = line.split(' ', 1)
         print(word)
+
