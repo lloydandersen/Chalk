@@ -1,32 +1,32 @@
 import re
+import toml as tml
+working_list = []
+working_string = ""
+end_list = []
 
-lesson_list = []
-question_dict = {}
-answer_dict = {}
-
-def get_lesson_list(file):
-    for line in file:
-        # word = line.split(' ', 1)
-        x = re.findall("L", line)
-        if x != []:
-            lesson_list.append(line.rstrip())
-    return lesson_list
-
-def split_lessons(file):
-    sentence = ""
-    for line in file:
-        print(line)
-
+def lesson_objects():
+    x = re.split("L\\[", working_string)
+    x.pop(0)
+    file_handle = open("speciall.on", "w")
+    for i in x:
+        file_handle.write(i)
 
 
 def run(file_name):
-    file = open(f"{file_name}", "r")
-    lessons = get_lesson_list(file)
-    splits = split_lessons(file)
-    print(splits)
-
-    file.close()
-
+    global working_string
+    with open(f"{file_name}", "r") as file:
+        for line in file:
+            stripped_line = line.rstrip()
+            working_list.append(stripped_line)
+        for item in working_list:
+            working_string += ' ' + item
+        working_string = working_string.replace(" ", '')
+        lesson_objects()
+        file.close()
 
 run("ddd.carb")
+
+
+
+
 
