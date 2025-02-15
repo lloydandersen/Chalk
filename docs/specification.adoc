@@ -1,0 +1,24 @@
+= Chalk
+Lloyd Andersen <lloydandersenco@gmail.com>
+v0.1.0, 2025-02-07
+:toc:
+
+== About
+
+
+The Chalk specification was created for making third grade math questions. A template problem can be modified for custom math problems and assignment generation. The Chalk part just cintains the template to be feed into assignemnt generators such as the HomeSkool and PrepSkool Projects. However a even better use was discovered for synethic data creation. Which can used to produce high quality data and attributes for machine learning applications.
+
+== File
+Standard File Extension: *.chalk* +
+Outputs created for syntheic data or problem sets use: *.carb*
+
+
+== Header
+The header is the first part created when writing a chalk file.
+All chalk files must begin with the *[CHALK]* cornerstone. + 
+
+*Cornerstones* are the start and end of the *Chalk Block*.
+
+
+== Problem
+
