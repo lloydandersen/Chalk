@@ -1,4 +1,4 @@
-
+[CHALK]
 name = "prealgebra"
 collection = "1"
 author = "Lloyd Andersen"
@@ -13,7 +13,7 @@ dop = 2025-02-14
 desc = "A simple set of prealgebra problems, I just made up for this example."
 
 
-[IMPORT]
+# it should go here
 std = "standard"
 math = "math"
 
