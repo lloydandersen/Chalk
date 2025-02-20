@@ -4,6 +4,9 @@ collection = "1"
 author = "Lloyd Andersen"
 license = "mit"
 creation_date = 2025-02-14
+author = "Lloyd Andersen Jr."
+
+
 
 [SOURCE]
 name = "Lloyd Andersen"
@@ -11,6 +14,14 @@ id = "1"
 link = 'https://github.com/lloydandersen'
 dop = 2025-02-14
 desc = "A simple set of prealgebra problems, I just made up for this example."
+
+
+[SOURCE]
+name = "Lloyd Andersen Jr."
+id = "2"
+link = 'https://github.com/lloydandersenjr'
+dop = 2025-02-10
+desc = "A simple set of prealgebra problems, I just made up for this example. Even more!"
 
 
 [IMPORT]
@@ -21,6 +32,10 @@ math = "math"
 [BEGIN]
 name = "Fruit Problem"
 src = "1"
+desc = "This problem is a fruit problem."
+hint = "This is a sum problem. Take the quantity of both of their fruits and add them up."
+
+
 
 [VARS]
 name_one = "std.name()"
@@ -38,7 +53,17 @@ equation = "int_one + int_two = ANSWER"
 answer = "[name_one] and [name_two] have [ANSWER] between them!"
 
 
+
+[MEDIA]
+png = "some_image.png"
+jpeg = "another_image.jpeg"
+svg = "some_image.svg"
+draw = ["some_image.draw", name_one, name_two, int_one, int_two]
+
+
+
 [END]
+
 
 
 

@@ -1,7 +1,7 @@
 [project]
-name = "chalk"
+name = "Chalk"
 version = "0.1.0"
-description = "Add your description here"
+description = "The Chalk Library allows for the creation of synthetic problem sets."
 readme = "README.md"
 authors = [
     { name = "lloydandersen", email = "lloydandersenco@gmail.com" }
@@ -12,10 +12,3 @@ dependencies = []
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[dependency-groups]
-dev = [
-    "mypy>=1.15.0",
-    "pytest>=8.3.4",
-    "ruff>=0.9.6",
-]

@@ -1,2 +1,2 @@
 def hello() -> str:
-    return "Hello from chalk!"
+    return "Hello from test-chalk!"
